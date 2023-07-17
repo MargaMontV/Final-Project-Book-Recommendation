@@ -9,16 +9,16 @@ st.set_page_config(
 
 # Cargar el CSS personalizado
 def load_css():
-    with open('../css/style.css') as f:
+    with open('./css/style.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 # Llamar a la función para cargar el CSS y el toml
 load_css()
 
-books_df = pd.read_csv('../data/books_clean.csv')
+books_df = pd.read_csv('./data/books_clean.csv')
 
 # Load your custom design image
-title_image = "../book_logo_title.jpg"
+title_image = "./book_logo_title.jpg"
 
 # Display the image as the app title
 st.image(title_image)
