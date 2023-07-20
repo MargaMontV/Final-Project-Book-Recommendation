@@ -11,31 +11,31 @@ Ironhack Madrid - Data Analytics Part Time - Feb 2023 - Final Project
 Welcome to LitPick, the final project for the Data Analytics Bootcamp. This app is designed to help users discover their next great read by providing personalized book recommendations based on their preferences. The app utilizes web scraping, data cleaning, and Streamlit for the user interface.
 
 ## :green_book: **Project Overview**
-### :bullet: Data Collection
+### 🗳️ Data Collection
 To create a diverse and extensive collection of books, I performed web scraping using Selenium from Goodreads. The scraping process covered 31 genres, gathering data on 1,000 books per genre, resulting in a total of 31,000 books.
 
-### Data Cleaning
+### ♻️ Data Cleaning
 The collected data underwent a thorough cleaning process to ensure its quality and usability. Steps taken during the data cleaning phase include:
 - Handling numerical data: Ensuring all numerical data were correctly represented as integers or floats instead of objects.
 - Error elimination: Removing rows with data errors or missing values to maintain data integrity.
 
-### App Development
+### 📥 App Development
 The main app was developed using Streamlit, which provides an interactive and user-friendly interface. I initially tested the app's functionality in Jupyter Notebook before implementing it in the main.py file.
 
-### App Features
+### 📊 App Features
 The Book Recommending App offers the following features:
 
-- Genre Filtering: Users can select their preferred genre from a list of 31 options, narrowing down the book recommendations to their favorite literary category.
+- **Genre Filtering**: Users can select their preferred genre from a list of 31 options, narrowing down the book recommendations to their favorite literary category.
 
-- Length Preference: Users can choose between long or short books, filtering the recommendations based on the lenght of the book.
+- **Length Preference**: Users can choose between long or short books, filtering the recommendations based on the lenght of the book.
 
-- Popularity Preference: Users can decide whether they want to explore popular books or hidden gems. The app filters books based on reviews counts.
+- **Popularity Preference**: Users can decide whether they want to explore popular books or hidden gems. The app filters books based on reviews counts.
 
-- Recency Preference: Users can opt for recent or classical books. The app filters books based on their publication year.
+- **Recency Preference**: Users can opt for recent or classical books. The app filters books based on their publication year.
 
-- Book Selection: After applying the desired filters, the app presents the user with three book choices. Each book is accompanied by its cover image, title, and author. Users can click on a cover to be redirected to the book's Goodreads page for more information.
+- **Book Selection**: After applying the desired filters, the app presents the user with three book choices. Each book is accompanied by its cover image, title, and author. Users can click on a cover to be redirected to the book's Goodreads page for more information.
 
-- Shuffle Option: If the user isn't satisfied with the initial recommendations, they can shuffle the book options to receive a new set of choices.
+- **Shuffle Option**: If the user isn't satisfied with the initial recommendations, they can shuffle the book options to receive a new set of choices.
 
 ## :bulb: **How to Use the App**
 - Access the Book Recommending App through the provided Streamlit link: https://final-project-book-recommendationgi-goodreads.streamlit.app/
