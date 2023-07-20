@@ -11,7 +11,7 @@ Ironhack Madrid - Data Analytics Part Time - Feb 2023 - Final Project
 Welcome to LitPick, the final project for the Data Analytics Bootcamp. This app is designed to help users discover their next great read by providing personalized book recommendations based on their preferences. The app utilizes web scraping, data cleaning, and Streamlit for the user interface.
 
 ## :green_book: **Project Overview**
-### Data Collection
+### :bullet: Data Collection
 To create a diverse and extensive collection of books, I performed web scraping using Selenium from Goodreads. The scraping process covered 31 genres, gathering data on 1,000 books per genre, resulting in a total of 31,000 books.
 
 ### Data Cleaning
