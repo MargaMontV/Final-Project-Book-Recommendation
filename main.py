@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 
 st.set_page_config(
-        page_title="BOOK RECOMMENDING APP",
+        page_title="LitPick - App for book recommendation",
 )
 
 # Cargar el CSS personalizado
@@ -22,7 +22,7 @@ title_image = "./book_logo_title.jpg"
 
 # Display the image as the app title
 st.image(title_image)
-st.title("BOOK RECOMMENDING APP")
+st.title("LitPick - App for book recommendation")
 
 st.markdown("""
  * Use the left menu to select your books preferences
