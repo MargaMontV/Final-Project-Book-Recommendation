@@ -3,7 +3,7 @@
 Ironhack Madrid - Data Analytics Part Time - Feb 2023 - Final Project
 
 # :books: **LitPick - App for book recommendation**
-![image](https://github.com/MargaMontV/Final-Project-Book-Recommendation/assets/122310638/a4799096-e440-405c-a60e-9b1619a19c9c)
+![image](https://github.com/MargaMontV/Final-Project-Book-Recommendation/assets/122310638/e2625c8d-8203-42b6-9c8a-d4f4ee051e0a)
  https://final-project-book-recommendationgi-goodreads.streamlit.app/
 
 
