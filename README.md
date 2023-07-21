@@ -94,7 +94,7 @@ The Book Recommending App offers the following features:
     ├── .gitignore
     ├── README.md
     ├── book_logo_title.jpg
-    ├── main.py
+    └── main.py
 ```
 
 ## :pushpin: **Conclusion**
