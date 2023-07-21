@@ -65,28 +65,36 @@ The Book Recommending App offers the following features:
 
 :file_folder: **Folder Structure**
 ```
-└── project
+└── Final-Project-Book-Recommendation
+    ├── .streamlit
+    │   ├── config.toml
+    ├── .vscode
+    │   ├── launch.json
+    ├── css
+    │   ├── style.css
     ├── data
-    ├── modules
-    │   ├── geo_calculations.py
-    │   └── module_functions.py
+    │   ├── books_clean.csv
+    │   ├── books_urls.csv
+    │   ├── goodreads_books.csv
     ├── notebooks
     │   ├── m_acquisition.ipynb
-    │   └── m_analysis.ipynb
-    │   └── m_wrangling.ipynb
-    │   └── pm1_notebook.ipynb
+    │   ├── m_analysis.ipynb
+    │   ├── m_wrangling.ipynb
     ├── p_acquisition
     │   ├── m_acquisition.py
     ├── p_analysis
     │   ├── m_analysis.py
     ├── p_wrangling
     │   ├── m_wrangling.py
-    └── presentation
-    └── project_process
-    └── query
-    └── .gitignore
-    └── README.md
-    └── main.py
+    │   ├── m_wrangling_main.py
+    ├── presentation
+    │   ├── LitPicks_presentation.ppt
+    ├── requirements
+    │   ├── chromedriver.exe
+    ├── .gitignore
+    ├── README.md
+    ├── book_logo_title.jpg
+    ├── main.py
 ```
 
 ## :pushpin: **Conclusion**
