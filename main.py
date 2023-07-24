@@ -37,6 +37,7 @@ df_published = man.filter_published(df_ratings_count)
 #Create a sample of 3 books
 df_sample = man.sample_df(df_published)
 
+
 #Create columns so the recommendations will appear side by side
 col1, col2, col3 = st.columns(3)
 

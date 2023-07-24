@@ -29,32 +29,45 @@ def filter_genre(df_1):
 def filter_pages(df_2):
     pages = st.sidebar.selectbox("Would you like to read a short book or a long book?",
                              ("Short", "Long"))
-    if pages == "Short":
-        return df_2[df_2["Pages"] <= 299]
-    else:
-        return df_2[df_2["Pages"] >= 300]
+    try:
+        if pages == "Short":
+            return df_2[df_2["Pages"] <= 350]
+        else:
+            return df_2[df_2["Pages"] >= 351]
+    except ValueError:
+        st.error("Please choose another category. There are no books with this set of characteristics.")
+
 
 #Book Filter 3 by ratings count
 def filter_ratings_count(df_3):
     ratings_count = st.sidebar.selectbox("Would you like to read a popular book or a hidden gem?",
                                      ("Popular", "Hidden gem"))
-    if ratings_count == "Hidden gem":
-        return df_3[df_3["Ratings count"] <= 100000]
-    else:
-        return df_3[df_3["Ratings count"] >= 100001]                                   
+    try:
+        if ratings_count == "Hidden gem":
+            return df_3[df_3["Ratings count"] <= 70000]
+        else:
+            return df_3[df_3["Ratings count"] >= 70001]
+    except ValueError:
+        st.error("Please choose another category. There are no books with this set of characteristics.")                                  
 
 #Book Filter 4 by year published
 def filter_published(df_4):
     published = st.sidebar.selectbox("Do you prefer to read a recent book or a classic?",
                                      ("Recent", "Classic"))
-    if published == "Classic":
-        return df_4[df_4["First published"] <= 2017]
-    else:
-        return df_4[df_4["First published"] >= 2018]
+    try:
+        if published == "Classic":
+            return df_4[df_4["First published"] <= 2012]
+        else:
+            return df_4[df_4["First published"] >= 2013]
+    except ValueError:
+        st.error("Please choose another category. There are no books with this set of characteristics.")
 
 #Create a sample of 3 books
 def sample_df(df_s):
-    return df_s.sample(n=3).reset_index()
+    try:
+        return df_s.sample(n=3).reset_index()
+    except ValueError:
+        st.error("Please choose another category. There are no books with this set of characteristics.")
 
 #Create columns so the recommendations will appear side by side
 col1, col2, col3 = st.columns(3)
