@@ -28,9 +28,11 @@ def filter_genre(df_1):
 #Book Filter 2 by pages
 def filter_pages(df_2):
     pages = st.sidebar.selectbox("Would you like to read a short book or a long book?",
-                             ("Short", "Long"))
+                             ("All", "Short", "Long"))
     try:
-        if pages == "Short":
+        if pages == "All":
+            return df_2
+        elif pages == "Short":
             return df_2[df_2["Pages"] <= 350]
         else:
             return df_2[df_2["Pages"] >= 351]
@@ -41,9 +43,11 @@ def filter_pages(df_2):
 #Book Filter 3 by ratings count
 def filter_ratings_count(df_3):
     ratings_count = st.sidebar.selectbox("Would you like to read a popular book or a hidden gem?",
-                                     ("Popular", "Hidden gem"))
+                                     ("All", "Popular", "Hidden gem"))
     try:
-        if ratings_count == "Hidden gem":
+        if ratings_count == "All":
+            return df_3
+        elif ratings_count == "Hidden gem":
             return df_3[df_3["Ratings count"] <= 70000]
         else:
             return df_3[df_3["Ratings count"] >= 70001]
@@ -53,9 +57,11 @@ def filter_ratings_count(df_3):
 #Book Filter 4 by year published
 def filter_published(df_4):
     published = st.sidebar.selectbox("Do you prefer to read a recent book or a classic?",
-                                     ("Recent", "Classic"))
+                                     ("All", "Recent", "Classic"))
     try:
-        if published == "Classic":
+        if published == "All":
+            return df_4
+        elif published == "Classic":
             return df_4[df_4["First published"] <= 2012]
         else:
             return df_4[df_4["First published"] >= 2013]

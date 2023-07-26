@@ -17,9 +17,10 @@ st.image(title_image)
 
 #Give instructions to the user of how the app works
 st.markdown("""
- * This is an app for book recommendations
- * Use the left menu to select your books preferences
- * Your recommendations will appear below, You can click on the cover to see the whole book info
+ * This is an app for book recommendations.
+ * Use the left menu to select your books preferences.
+ * Your recommendations will appear below. 
+ * You can click on the cover to see the whole book info.
 """)
 
 #Book Filter 1 by genre
